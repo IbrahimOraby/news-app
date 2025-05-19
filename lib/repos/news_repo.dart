@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:dio/dio.dart';
 import 'package:iti_day3_session/data/models/news_models.dart';
 
@@ -18,7 +20,7 @@ class NewsRepo {
         return newsResponseModel;
       }
     } catch (e) {
-      print(e);
+      log(e.toString());
       return null;
     }
   }
